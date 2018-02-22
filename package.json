@@ -10,6 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^2.14.1",
-    "inquirer": "^5.1.0"
+    "inquirer": "^5.1.0",
+    "jsonfile": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
   }
 }
