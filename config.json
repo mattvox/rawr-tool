@@ -1,12 +1,12 @@
 {
   "templates": [
     {
-      "name": "Default RAwR template",
+      "name": "Default RawR template (React app with Redux)",
       "value": "git@github.com:mattvox/rawr-template-redux.git"
     },
     {
-      "name": "Test RAwR template",
-      "url": "git@github.com:mattvox/rawr-template-redux.git"
+      "name": "Test/placeholder template",
+      "value": "git@github.com:mattvox/rawr-template-redux.git"
     }
   ]
 }
