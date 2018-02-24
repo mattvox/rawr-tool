@@ -7,7 +7,7 @@ const inquirer = require('inquirer');
 const jsonfile = require('jsonfile');
 
 const CURRENT_DIR = process.cwd();
-const CONFIG_FILE = jsonfile.readFileSync(`${CURRENT_DIR}/config.json`);
+const CONFIG_FILE = jsonfile.readFileSync('config.json');
 const CHOICES = CONFIG_FILE.templates;
 
 const QUESTIONS = [
@@ -40,9 +40,7 @@ program
       .then((answers) => {
         const source = answers['template-choice'];
         const name = answers['project-name'];
-        console.log(name);
         const path = `${CURRENT_DIR}/${name}`;
-        console.log(path);
 
         createApp(source, path, name);
       });
