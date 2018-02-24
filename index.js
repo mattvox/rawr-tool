@@ -6,8 +6,8 @@ const program = require('commander');
 const inquirer = require('inquirer');
 const jsonfile = require('jsonfile');
 
-const CONFIG_FILE = jsonfile.readFileSync('config.json');
 const CURRENT_DIR = process.cwd();
+const CONFIG_FILE = jsonfile.readFileSync(`${CURRENT_DIR}/config.json`);
 const CHOICES = CONFIG_FILE.templates;
 
 const QUESTIONS = [
