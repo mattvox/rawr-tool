@@ -1,6 +1,10 @@
 {
   "name": "rawr-tool",
   "version": "0.1.0",
+  "preferGlobal": true,
+  "bin": {
+    "rawr": "./index.js"
+  },
   "description": "Rawr saves devs valuable time by easily and quickly creating React projects from customized templates.",
   "main": "index.js",
   "scripts": {
